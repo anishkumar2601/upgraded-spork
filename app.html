@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameHub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">GameHub</div>
+<nav>
+<a href="#">Store</a>
+<a href="#">Library</a>
+<a href="#">Community</a>
+<a href="#">Profile</a>
+<i class="fa fa-moon toggle"></i>
+</nav>
+</header>
+
+<div class="hero">
+<div class="slide active" style="background-image:url('https://picsum.photos/1200/600?1')"></div>
+<div class="slide" style="background-image:url('https://picsum.photos/1200/600?2')"></div>
+<div class="slide" style="background-image:url('https://picsum.photos/1200/600?3')"></div>
+
+<div class="hero-content">
+<h1>Featured Game</h1>
+<button class="btn">Buy Now</button>
+</div>
+</div>
+
+<div class="sidebar">
+<h3>Filters</h3>
+<div class="search">
+<input type="text" id="search" placeholder="Search games...">
+</div>
+<p>Action</p>
+<p>RPG</p>
+<p>FPS</p>
+</div>
+
+<div class="container">
+<h2 class="section-title">Trending</h2>
+<div class="grid" id="games"></div>
+</div>
+
+<div class="modal" id="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2 id="modalTitle"></h2>
+<p>Game details...</p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
